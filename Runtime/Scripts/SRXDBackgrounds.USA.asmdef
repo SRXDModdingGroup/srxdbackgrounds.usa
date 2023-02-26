@@ -1,0 +1,16 @@
+{
+    "name": "SRXDBackgrounds.USA",
+    "rootNamespace": "SRXDBackgrounds.USA",
+    "references": [
+        "SRXDBackgrounds.Common"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
