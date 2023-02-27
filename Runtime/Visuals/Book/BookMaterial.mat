@@ -142,7 +142,7 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _Warp_Amount: 0
-    - _Warp_Scale: 1.93
+    - _Warp_Scale: 2
     - _Wave_Amount: 0
     - _Wave_Contrast: 16
     - _Wave_Frequency: 2
