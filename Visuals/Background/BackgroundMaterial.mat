@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BackgroundMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 659ad45ca23fc504fb288a47c15e3da1,
+  m_Shader: {fileID: -6465566751694194690, guid: 30607b016a9319e4e9566dd67b965908,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -54,7 +54,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: b269b0364dd2ad843b27a70018da32bd, type: 3}
-        m_Scale: {x: 0.5, y: 0.5}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 1.22}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
