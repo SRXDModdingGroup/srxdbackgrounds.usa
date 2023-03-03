@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EarthMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 30607b016a9319e4e9566dd67b965908,
+  m_Shader: {fileID: -6465566751694194690, guid: 6bb86ea2a7a2bf3469b005df1c02c9be,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -32,6 +32,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Clouds:
+        m_Texture: {fileID: 2800000, guid: 62162d942b6774c4e97fa1012ca3d479, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Color:
         m_Texture: {fileID: 2800000, guid: 60c0e9d45b478a84aaffb39e676606d5, type: 3}
         m_Scale: {x: 2, y: 2}
@@ -53,9 +57,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 60c0e9d45b478a84aaffb39e676606d5, type: 3}
-        m_Scale: {x: 4, y: 2}
-        m_Offset: {x: 1.68, y: 0.61}
+        m_Texture: {fileID: 2800000, guid: 46a49a0ea99def84eb8023fa419ffa43, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: -0.18}
+    - _Masks:
+        m_Texture: {fileID: 2800000, guid: 381feeac449120b4eb6de246421b4518, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -92,6 +100,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _Clouds_Motion_Rate: 0.2
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -102,7 +111,8 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Intensity: 1
+    - _Intensity: 0.08
+    - _Lights_Intensity: 5.23
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Pan_Rate: -0.005
@@ -119,11 +129,17 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - _Atmosphere_Color: {r: 0.1995283, g: 0.28149065, b: 0.3, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Clouds_Motion_Amount: {r: 0.01, g: 0.01, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Lights_Color: {r: 4, g: 3.199354, b: 1.981132, a: 0}
+    - _Offset: {r: 1.49, g: -2.18, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _Tiling: {r: 2, g: 8, b: 0, a: 0}
+    - _Tint: {r: 0.09333334, g: 0.13000001, b: 0.2, a: 1}
+    - _Water_Color: {r: 0, g: 0.038000017, b: 0.056999996, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2993124993048311381
 MonoBehaviour:
