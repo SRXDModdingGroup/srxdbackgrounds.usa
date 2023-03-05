@@ -5,10 +5,11 @@ using UnityEngine;
 
 namespace SRXDBackgrounds.USA {
     public class USA_Scene : MonoBehaviour {
-        [SerializeField] private USA_WaveLines waveLines;
-        [SerializeField] private USA_PlanetRings planetRings;
         [SerializeField] private USA_Book book;
+        [SerializeField] private USA_PixelRing pixelRing;
         [SerializeField] private USA_LaserRing laserRing;
+        [SerializeField] private USA_PlanetRings planetRings;
+        [SerializeField] private USA_WaveLines waveLines;
         [SerializeField] private USA_Particles particles;
         [SerializeField] private USA_Earth earth;
             

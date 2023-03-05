@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace SRXDBackgrounds.USA {
-    public class USA_WaveLines : MonoBehaviour {
+    public class USA_PixelRing : MonoBehaviour {
         
     }
 }
