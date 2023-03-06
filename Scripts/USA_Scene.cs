@@ -23,15 +23,15 @@ namespace SRXDBackgrounds.USA {
             eventReceiver.Reset += EventReset;
         }
 
-        private void EventOn(VisualsEvent obj) {
+        private void EventOn(VisualsEvent visualsEvent) {
             
         }
 
-        private void EventOff(VisualsEvent obj) {
+        private void EventOff(VisualsEvent visualsEvent) {
             
         }
 
-        private void EventControlChange(VisualsEvent obj) {
+        private void EventControlChange(VisualsEvent visualsEvent) {
             
         }
 

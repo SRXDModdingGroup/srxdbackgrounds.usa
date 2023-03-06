@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87a9209a8aeaa6b4c99831daa570cd2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  renderer: {fileID: 6348302534481525105}
+  maxIntensity: 4
 --- !u!1 &5038788500536660403
 GameObject:
   m_ObjectHideFlags: 0

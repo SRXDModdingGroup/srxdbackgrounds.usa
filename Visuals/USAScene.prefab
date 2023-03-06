@@ -168,10 +168,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cfd7229e94382546ae2ef5a7899861f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveLines: {fileID: 4815022017376754130}
-  planetRings: {fileID: 399903346497131539}
   book: {fileID: 6251568162852000294}
+  pixelRing: {fileID: 3505124039840700934}
   laserRing: {fileID: 5972699143633647146}
+  planetRings: {fileID: 399903346497131539}
+  waveLines: {fileID: 4815022017376754130}
   particles: {fileID: 4864496739958622945}
   earth: {fileID: 3375453343884105916}
 --- !u!114 &9077915652831100142
@@ -629,6 +630,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4594441529648586700}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3505124039840700934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1109591421500949962, guid: e1f119196641a4b42bfae161cab05b7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4594441529648586700}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c76544ef08ad9b45a9477e156232f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5468014052128377161
 PrefabInstance:
   m_ObjectHideFlags: 0
