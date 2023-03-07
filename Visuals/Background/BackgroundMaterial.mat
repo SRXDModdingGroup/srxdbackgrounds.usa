@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BackgroundMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 30607b016a9319e4e9566dd67b965908,
+  m_Shader: {fileID: -6465566751694194690, guid: 9dce4647e2190544d937039b14f083ee,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -33,7 +33,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Color:
-        m_Texture: {fileID: 2800000, guid: b269b0364dd2ad843b27a70018da32bd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0fd43ca21ae4f774da252ba56d2f9e46, type: 3}
         m_Scale: {x: 0.8, y: 0.8}
         m_Offset: {x: 0, y: 0.05}
     - _DetailAlbedoMap:
@@ -66,6 +66,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Phase:
+        m_Texture: {fileID: 2800000, guid: 38ec8c0f174423942a1058a583675252, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -103,7 +107,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Intensity: 0.5
+    - _Intensity: 1
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Pan_Rate: 0.003
