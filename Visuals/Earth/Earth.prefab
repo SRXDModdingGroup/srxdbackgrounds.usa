@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2845339271254026391}
   - component: {fileID: 838609637325422073}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Earth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,6 +140,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d5c48441f321c14c89d1ef562c18441,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d5c48441f321c14c89d1ef562c18441, type: 3}
@@ -253,6 +258,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Earth (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d5c48441f321c14c89d1ef562c18441,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3469197206886348595}
   - component: {fileID: 2462384484701889126}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 2099881611286825839}
   - component: {fileID: 4547186128556821981}
   - component: {fileID: 2239497615283191945}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4938,7 +4938,7 @@ GameObject:
   - component: {fileID: 6659954760239163905}
   - component: {fileID: 3534533315697730863}
   - component: {fileID: 7996382943145019009}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5033,7 +5033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 581820647852862237}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Scale Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}

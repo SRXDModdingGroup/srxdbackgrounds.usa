@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using SRXDBackgrounds.Common;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace SRXDBackgrounds.USA {
     public class USA_Book : MonoBehaviour {

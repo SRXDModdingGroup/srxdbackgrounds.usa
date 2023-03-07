@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using SRXDCustomVisuals.Core;
 using UnityEngine;
 
@@ -18,25 +16,79 @@ namespace SRXDBackgrounds.USA {
         private void Awake() {
             eventReceiver = GetComponent<VisualsEventReceiver>();
             eventReceiver.On += EventOn;
-            eventReceiver.Off += EventOff;
             eventReceiver.ControlChange += EventControlChange;
             eventReceiver.Reset += EventReset;
         }
 
         private void EventOn(VisualsEvent visualsEvent) {
-            
-        }
+            int index = visualsEvent.Index;
+            float valueNormalized = visualsEvent.Value / 256f;
 
-        private void EventOff(VisualsEvent visualsEvent) {
-            
+            switch (index) {
+                case 0:
+                    book.PulseScale();
+                    break;
+                case 1:
+                    book.TriggerParticle();
+                    break;
+                case < 10:
+                    pixelRing.Trigger(index - 2, valueNormalized);
+                    break;
+                case 10:
+                    laserRing.Trigger();
+                    break;
+                case 11:
+                    planetRings.PulseScale();
+                    break;
+            }
         }
 
         private void EventControlChange(VisualsEvent visualsEvent) {
-            
+            int index = visualsEvent.Index;
+            float valueNormalized = visualsEvent.Value / 256f;
+
+            switch (index) {
+                case 0:
+                    book.SetIntensity(valueNormalized);
+                    break;
+                case 1:
+                    book.SetWaveAmount(valueNormalized);
+                    break;
+                case 2:
+                    book.SetWarpAmount(valueNormalized);
+                    break;
+                case < 7:
+                    planetRings.SetIntensity(index - 3, valueNormalized);
+                    break;
+                case 7:
+                    planetRings.SetSpeed(valueNormalized);
+                    break;
+                case 8:
+                    planetRings.SetWobble(valueNormalized);
+                    break;
+                case < 13:
+                    waveLines.SetIntensity(index - 9, valueNormalized);
+                    break;
+                case 13:
+                    particles.SetIntensity(valueNormalized);
+                    break;
+                case 14:
+                    particles.SetSpeed(valueNormalized);
+                    break;
+                case 15:
+                    earth.SetTransition(valueNormalized);
+                    break;
+            }
         }
 
         private void EventReset() {
-            
+            book.DoReset();
+            pixelRing.DoReset();
+            laserRing.DoReset();
+            planetRings.DoReset();
+            waveLines.DoReset();
+            particles.DoReset();
+            earth.DoReset();
         }
     }
 }
