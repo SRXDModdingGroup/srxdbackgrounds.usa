@@ -67,7 +67,7 @@ namespace SRXDBackgrounds.USA {
                     planetRings.SetWobble(valueNormalized);
                     break;
                 case < 13:
-                    waveLines.SetIntensity(index - 9, valueNormalized);
+                    waveLines.SetAlpha(index - 9, valueNormalized);
                     break;
                 case 13:
                     particles.SetIntensity(valueNormalized);

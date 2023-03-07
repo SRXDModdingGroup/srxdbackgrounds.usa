@@ -2,10 +2,9 @@ using UnityEngine;
 
 namespace SRXDBackgrounds.USA {
     public class USA_WaveLines : MonoBehaviour {
-        private static readonly int INTENSITY = Shader.PropertyToID("_Intensity");
+        private static readonly int ALPHA = Shader.PropertyToID("_Alpha");
 
         [SerializeField] private MeshRenderer[] renderers;
-        [SerializeField] private float maxIntensity;
 
         private Material[] materials;
 
@@ -16,16 +15,14 @@ namespace SRXDBackgrounds.USA {
                 materials[i] = renderers[i].material;
         }
 
-        public void SetIntensity(int index, float value) {
-            value *= maxIntensity;
-            
-            materials[index].SetFloat(INTENSITY, value);
-            materials[materials.Length - 1 - index].SetFloat(INTENSITY, value);
+        public void SetAlpha(int index, float value) {
+            materials[index].SetFloat(ALPHA, value);
+            materials[materials.Length / 2 + index].SetFloat(ALPHA, value);
         }
 
         public void DoReset() {
             foreach (var material in materials)
-                material.SetFloat(INTENSITY, maxIntensity);
+                material.SetFloat(ALPHA, 1f);
         }
     }
 }
