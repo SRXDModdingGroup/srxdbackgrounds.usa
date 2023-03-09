@@ -52,7 +52,7 @@ MonoBehaviour:
   renderers:
   - {fileID: 6348302534481525105}
   - {fileID: 4139482517684224779}
-  maxIntensity: 16
+  maxIntensity: 8
   maxSpeed: 4
   lengthScale: 4
 --- !u!1001 &3539999817983448227

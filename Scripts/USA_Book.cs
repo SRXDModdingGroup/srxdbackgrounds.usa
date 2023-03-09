@@ -17,12 +17,14 @@ namespace SRXDBackgrounds.USA {
         [SerializeField] private float maxWarpAmount;
 
         private Material material;
-        private EnvelopeInverted scaleEnvelope;
+        private EnvelopeBasic scaleEnvelope;
 
         private void Awake() {
             material = meshRenderer.material;
-            scaleEnvelope = new EnvelopeInverted {
-                Duration = pulseScaleDuration
+            scaleEnvelope = new EnvelopeBasic {
+                Duration = pulseScaleDuration,
+                Invert = true,
+                InterpolationType = InterpolationType.EaseOut
             };
         }
 

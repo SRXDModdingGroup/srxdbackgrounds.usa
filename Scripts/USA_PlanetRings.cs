@@ -15,6 +15,7 @@ namespace SRXDBackgrounds.USA {
         [SerializeField] private float pulseScaleDuration;
         [SerializeField] private float defaultIntensity;
         [SerializeField] private float maxIntensity;
+        [SerializeField] private float maxSpeed;
         [SerializeField] private float maxWobble;
 
         private Material[] materials;
@@ -22,7 +23,7 @@ namespace SRXDBackgrounds.USA {
         private float[] wobbleAngles;
         private float speed = 1f;
         private float wobble;
-        private EnvelopeInverted scaleEnvelope;
+        private EnvelopeBasic scaleEnvelope;
 
         private void Awake() {
             materials = new Material[renderers.Length];
@@ -38,8 +39,10 @@ namespace SRXDBackgrounds.USA {
                 wobbleAngles[i] = Random.Range(0f, 360f);
             }
             
-            scaleEnvelope = new EnvelopeInverted {
-                Duration = pulseScaleDuration
+            scaleEnvelope = new EnvelopeBasic {
+                Duration = pulseScaleDuration,
+                Invert = true,
+                InterpolationType = InterpolationType.EaseOut
             };
 
             wobble = maxWobble;
@@ -52,7 +55,7 @@ namespace SRXDBackgrounds.USA {
                 rotations[i] = Mathf.Repeat(rotations[i] + deltaTime * speed * rotationRates[i], 360f);
                 wobbleAngles[i] = Mathf.Repeat(wobbleAngles[i] + deltaTime * speed * wobbleRates[i], 360f);
                 
-                transforms[i].rotation = Quaternion.AngleAxis(wobble, Quaternion.AngleAxis(wobbleAngles[i], Vector3.forward) * Vector3.right)
+                transforms[i].localRotation = Quaternion.AngleAxis(wobble, Quaternion.AngleAxis(wobbleAngles[i], Vector3.forward) * Vector3.right)
                                          * Quaternion.AngleAxis(rotations[i], Vector3.forward);
             }
             
@@ -63,7 +66,7 @@ namespace SRXDBackgrounds.USA {
 
         public void SetIntensity(int index, float value) => materials[index].SetFloat(INTENSITY, maxIntensity * value);
 
-        public void SetSpeed(float value) => speed = value;
+        public void SetSpeed(float value) => speed = maxSpeed * value;
 
         public void SetWobble(float value) => wobble = maxWobble * value;
 
