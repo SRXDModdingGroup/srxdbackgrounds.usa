@@ -6,6 +6,7 @@ namespace SRXDBackgrounds.USA {
         private static readonly int INTENSITY = Shader.PropertyToID("_Intensity");
         private static readonly int WARP_AMOUNT = Shader.PropertyToID("_Warp_Amount");
         private static readonly int WAVE_AMOUNT = Shader.PropertyToID("_Wave_Amount");
+        private static readonly int ABERRATION = Shader.PropertyToID("_Aberration");
         
         [SerializeField] private Transform scaleRoot;
         [SerializeField] private MeshRenderer meshRenderer;
@@ -14,6 +15,8 @@ namespace SRXDBackgrounds.USA {
         [SerializeField] private float pulseScaleDuration;
         [SerializeField] private float defaultIntensity;
         [SerializeField] private float maxIntensity;
+        [SerializeField] private float minAberration;
+        [SerializeField] private float maxAberration;
         [SerializeField] private float maxWarpAmount;
 
         private Material material;
@@ -30,8 +33,10 @@ namespace SRXDBackgrounds.USA {
 
         private void LateUpdate() {
             float deltaTime = Time.deltaTime;
+            float value = scaleEnvelope.Update(deltaTime);
 
-            scaleRoot.localScale = (1f + pulseScaleAmount * scaleEnvelope.Update(deltaTime)) * Vector3.one;
+            scaleRoot.localScale = (1f + pulseScaleAmount * value) * Vector3.one;
+            material.SetFloat(ABERRATION, Mathf.Lerp(minAberration, maxAberration, value));
         }
 
         public void PulseScale() => scaleEnvelope.Trigger();

@@ -53,6 +53,8 @@ MonoBehaviour:
   pulseScaleDuration: 0.3
   defaultIntensity: 4
   maxIntensity: 8
+  minAberration: 0.02
+  maxAberration: 0.05
   maxWarpAmount: 0.1
 --- !u!1 &757242514807720063
 GameObject:

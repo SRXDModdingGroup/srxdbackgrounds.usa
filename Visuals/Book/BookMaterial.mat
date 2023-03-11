@@ -85,8 +85,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Pack:
+        m_Texture: {fileID: 2800000, guid: a6031f66111fcd04a98d39a075a5cb24, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Pixels:
+        m_Texture: {fileID: 2800000, guid: 58e0734b014d8774b988bc78f3b3b038, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -128,10 +136,15 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Intensity: 16
+    - _Intensity: 4
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
+    - _Pixels_Max_Intensity: 0.35
+    - _Pixels_Max_Speed: 0.5
+    - _Pixels_Min_Intensity: 0.1
+    - _Pixels_Min_Speed: 0.25
+    - _Pixels_Speed: 0.2
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
