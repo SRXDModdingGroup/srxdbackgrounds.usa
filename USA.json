@@ -1,0 +1,52 @@
+{
+	"disableBaseBackground": true,
+	"useAudioSpectrum": false,
+	"useAudioWaveform": true,
+	"useDepthTexture": true,
+	"farClip": 200,
+	"eventLabels": [
+		"Book Pulse",
+		"Book Particle",
+		"Pixel Ring 0",
+		"Pixel Ring 1",
+		"Pixel Ring 2",
+		"Pixel Ring 3",
+		"Pixel Ring 4",
+		"Pixel Ring 5",
+		"Pixel Ring 6",
+		"Pixel Ring 7",
+		"Laser Ring",
+		"Planets Pulse"
+	],
+	"curveLabels": [
+		"Book Intensity",
+		"Book Wave",
+		"Book Glitch",
+		"Planets Intensity 0",
+		"Planets Intensity 1",
+		"Planets Intensity 2",
+		"Planets Intensity 3",
+		"Planets Speed",
+		"Planets Wobble",
+		"Wave Lines Intensity 0",
+		"Wave Lines Intensity 1",
+		"Wave Lines Intensity 2",
+		"Wave Lines Intensity 3",
+		"Laser Lines Intensity",
+		"Laser Lines Speed",
+		"Earth Night-Day"
+	],
+	"assetBundles": [
+		"usa"
+	],
+	"elements": [
+		{
+			"bundle": "usa",
+			"asset": "USAScene.prefab",
+			"root": 1
+		}
+	],
+	"dependencies": [
+		"srxdbackgrounds.common"
+	]
+}
