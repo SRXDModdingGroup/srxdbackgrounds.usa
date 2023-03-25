@@ -6,7 +6,6 @@ namespace SRXDBackgrounds.USA {
         private static readonly int PHASE = Shader.PropertyToID("_Phase");
         
         [SerializeField] private MeshRenderer[] meshRenderers;
-        [SerializeField] private float maxPhase;
         [SerializeField] private float maxDuration;
 
         private Material[] materials;
@@ -26,7 +25,7 @@ namespace SRXDBackgrounds.USA {
             float deltaTime = Time.deltaTime;
             
             for (int i = 0; i < envelopes.Length; i++)
-                materials[i].SetFloat(PHASE, maxPhase * envelopes[i].Update(deltaTime));
+                materials[i].SetFloat(PHASE, envelopes[i].Update(deltaTime));
         }
 
         public void Trigger(int index, float value) {

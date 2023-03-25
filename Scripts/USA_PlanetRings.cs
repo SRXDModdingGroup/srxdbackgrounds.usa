@@ -24,6 +24,7 @@ namespace SRXDBackgrounds.USA {
         private float speed = 1f;
         private float wobble;
         private EnvelopeBasic scaleEnvelope;
+        private float pulseValue;
 
         private void Awake() {
             materials = new Material[renderers.Length];
@@ -59,10 +60,13 @@ namespace SRXDBackgrounds.USA {
                                          * Quaternion.AngleAxis(rotations[i], Vector3.forward);
             }
             
-            scaleRoot.localScale = (1f + pulseScaleAmount * scaleEnvelope.Update(deltaTime)) * Vector3.one;
+            scaleRoot.localScale = (1f + pulseScaleAmount * pulseValue * scaleEnvelope.Update(deltaTime)) * Vector3.one;
         }
         
-        public void PulseScale() => scaleEnvelope.Trigger();
+        public void PulseScale(float value) {
+            pulseValue = value;
+            scaleEnvelope.Trigger();
+        }
 
         public void SetIntensity(int index, float value) => materials[index].SetFloat(INTENSITY, maxIntensity * value);
 

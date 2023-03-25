@@ -26,7 +26,7 @@ namespace SRXDBackgrounds.USA {
 
             switch (index) {
                 case 0:
-                    book.PulseScale();
+                    book.PulseScale(valueNormalized);
                     break;
                 case 1:
                     book.TriggerParticle();
@@ -38,7 +38,7 @@ namespace SRXDBackgrounds.USA {
                     laserRing.Trigger();
                     break;
                 case 11:
-                    planetRings.PulseScale();
+                    planetRings.PulseScale(valueNormalized);
                     break;
             }
         }

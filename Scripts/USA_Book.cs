@@ -21,6 +21,7 @@ namespace SRXDBackgrounds.USA {
 
         private Material material;
         private EnvelopeBasic scaleEnvelope;
+        private float pulseValue;
 
         private void Awake() {
             material = meshRenderer.material;
@@ -33,13 +34,16 @@ namespace SRXDBackgrounds.USA {
 
         private void LateUpdate() {
             float deltaTime = Time.deltaTime;
-            float value = scaleEnvelope.Update(deltaTime);
+            float value = pulseValue * scaleEnvelope.Update(deltaTime);
 
             scaleRoot.localScale = (1f + pulseScaleAmount * value) * Vector3.one;
             material.SetFloat(ABERRATION, Mathf.Lerp(minAberration, maxAberration, value));
         }
 
-        public void PulseScale() => scaleEnvelope.Trigger();
+        public void PulseScale(float value) {
+            pulseValue = value;
+            scaleEnvelope.Trigger();
+        }
 
         public void TriggerParticle() => particleSystem.Play();
 

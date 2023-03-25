@@ -140,14 +140,18 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
+    - _Pixels_Framerate: 15
     - _Pixels_Max_Intensity: 0.35
-    - _Pixels_Max_Speed: 0.5
-    - _Pixels_Min_Intensity: 0.1
-    - _Pixels_Min_Speed: 0.25
+    - _Pixels_Max_Speed: 0.5123896
+    - _Pixels_Min_Intensity: 0.05
+    - _Pixels_Min_Speed: 0.13148978
+    - _Pixels_Quantize: 3
     - _Pixels_Speed: 0.2
+    - _Pixels_Tail: 0.68
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Seed: 3.91
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

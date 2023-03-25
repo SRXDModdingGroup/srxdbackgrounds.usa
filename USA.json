@@ -45,8 +45,5 @@
 			"asset": "USAScene.prefab",
 			"root": 1
 		}
-	],
-	"dependencies": [
-		"srxdbackgrounds.common"
 	]
 }
