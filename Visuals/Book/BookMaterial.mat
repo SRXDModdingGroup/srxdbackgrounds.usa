@@ -146,7 +146,7 @@ Material:
     - _Pixels_Min_Intensity: 0.05
     - _Pixels_Min_Speed: 0.13148978
     - _Pixels_Quantize: 3
-    - _Pixels_Speed: 0.2
+    - _Pixels_Speed: 12
     - _Pixels_Tail: 0.68
     - _QueueControl: 0
     - _QueueOffset: 0

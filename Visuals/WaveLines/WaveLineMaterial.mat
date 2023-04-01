@@ -117,10 +117,12 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Intensity: 8
+    - _Intensity: 4
     - _Metallic: 0
     - _OcclusionStrength: 1
+    - _Pan: 0
     - _Parallax: 0.005
+    - _Pinch_Range: 0.65
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1

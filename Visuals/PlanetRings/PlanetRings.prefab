@@ -103,8 +103,8 @@ MonoBehaviour:
   - -41
   pulseScaleAmount: 0.1
   pulseScaleDuration: 0.3
-  defaultIntensity: 4
-  maxIntensity: 8
+  defaultIntensity: 3
+  maxIntensity: 6
   maxSpeed: 2
   maxWobble: 20
 --- !u!1001 &2881376355644579722
