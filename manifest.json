@@ -2,7 +2,7 @@
   "name": "srxdbackgrounds.usa",
   "description": "SRXD background inspired by the video for Air On Line by Anamanaguchi",
   "version": "1.0.1",
-  "repository": "DominicAglialoro/srxdbackgrounds.usa",
+  "repository": "SRXDModdingGroup/srxdbackgrounds.usa",
   "dependencies": [
 	{
 	  "name": "SRXDCustomVisuals",
