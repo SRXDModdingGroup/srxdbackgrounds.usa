@@ -36,9 +36,6 @@
 		"Laser Lines Speed",
 		"Earth Night-Day"
 	],
-	"assetBundles": [
-		"usa"
-	],
 	"elements": [
 		{
 			"bundle": "usa",
